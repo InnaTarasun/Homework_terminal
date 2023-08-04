@@ -1,60 +1,47 @@
 ﻿1.посмотреть, где я: pwd
- 
 
 2.создать папку "Инна": mkdir Inna
- 
-  
+
 3.зайти в папку "Инна": cd Inna
- 
 
-4.создать 3 папки "
-Folder1", "Folder2", "Folder3": mkdir Folder1 Folder2 Folder3 
-
+4.создать 3 папки "Folder1", "Folder2", "Folder3": mkdir Folder1 Folder2 Folder3 
 5.зайти в папку "Folder1": cd Folder1
  
-
 6.создать 5 файлов (3 txt, 2 json): touch Letter1.txt Letter2.txt Letter3.txt Pets.json Members.json
 
 7.создать 3 папки в папке "Folder1" (находились в данной директории): mkdir Catalog1 Catalog2 Catalog3
  
+8.вывести список содержимого папки "Folder1" (находились в данной директории): ls -la или ls
 
-8.вывести список содержимого папки "Folder1" (находились в данной директории): ls -la
- или Ls
-
-9.открыть файл Letter2.txt
- в режиме редактирования: vim Letter2.txt
-  
+9.открыть файл Letter2.txt в режиме редактирования: vim Letter2.txt
 
 10. написать какой-либо текст в открытом файле: нажать i и ввести текст
 
 11.выйти из режима редактирования с сохранением введённых данных: нажать esc, в командной строке набрать :wq + enter
 
-12.выйти из папки на уровень выше cd .. 
+12.выйти из папки на уровень выше cd ..
 
 13.переместить файл Letter1.txt из папки Folder1 в папку Folder: mv Folder1/Letter1.txt Folder2/Letter1.txt 
-   переместить файл Pets.json из папки Folder1 в папку Folder: mv Folder1/Pets.json Folder2/Pets.json  
+   переместить файл Pets.json из папки Folder1 в папку Folder: mv Folder1/Pets.json Folder2/Pets.json
 
 14.скопировать файл Letter2.txt из папки Folder1 в папку Folder3: cp Folder1/Letter2.txt Folder2/Letter3.txt
- 
    скопировать файл Members.json из папки Folder1 в папку Folder3: cp Folder1/Members.json Folder3/Members.json
 
 15.найти файл Letter2.txt в папках текущей директории: find . -name "Letter2.txt"
- 
 
 16.просмотреть содержимое файла Letter2.txt в реальном времени: tail -f Letter2.txt
+   просмотреть содержимое файла Letter2.txt в реальном времени с поиском в файле слова фонарь: tail -f Letter2.txt | grep фонарь
 
-   просмотреть содержимое файла Letter2.txt в реальном времени с поиском в файле слова фонарь: tail -f Letter2.txt | grep фонарь - 
+17.вывести первую строку файла Letter2.txt: head -1 Letter2.txt или head -n 1 Letter2.txt 
 
-17.вывести первую строку файла Letter2.txt: head -1 Letter2.txt 
-
-18.вывести последнюю строку файла Letter2.txt: tail -1 Letter2.txt
+18.вывести последнюю строку файла Letter2.txt: tail -1 Letter2.txt или tail -n 1 Letter2.txt
 
 19.просмотр содержимого длинного файла Letter2.txt в режиме редактирования: less Letter2.txt
- 
 
 20.вывести текущую дату и время: date
 
-1*. отправить http запрос на сервер и вывести статическое содержимое страницы: curl "http://162.55.220.72:5006/terminal-hw-request" 
+1*. отправить http запрос на сервер и вывести статическое содержимое страницы: curl "http://162.55.220.72:5006/terminal-hw-request"
+
 2*. написать скрипт, который выполнит пункты 3, 4, 5, 6, 7, 8, 13
 mkdir Inna1
 cd Inna1
@@ -65,5 +52,3 @@ mkdir Catalog1 Catalog2 Catalog3
 ls
 mv Letter2.txt ../Folder2/Letter2.txt
 mv Pets.json ../Folder2/Letter2.txt
-
-
